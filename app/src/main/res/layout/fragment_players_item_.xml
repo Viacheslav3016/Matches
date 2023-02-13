@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".present.screens.PlayersItemFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVirtical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/player_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal"
+            app:layout_constraintEnd_toStartOf="@+id/player_surname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Ivan" />
+
+        <TextView
+            android:id="@+id/player_surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal"
+            app:layout_constraintEnd_toEndOf="@id/guidelineVirtical"
+            app:layout_constraintStart_toEndOf="@id/player_firstname"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="ivanov" />
+
+        <TextView
+            android:id="@+id/player_id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/idplayertitle"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guidelineHorizontal" />
+
+        <TextView
+            android:id="@+id/player_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/player_id"
+            android:textColor="@color/black"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/player_id_title"
+            app:layout_constraintEnd_toStartOf="@id/guidelineVirtical"
+            app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal" />
+
+        <TextView
+            android:id="@+id/player_age_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/titleageplayer"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/player_id" />
+
+        <TextView
+            android:id="@+id/player_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/player_age_title"
+            app:layout_constraintEnd_toEndOf="@id/guidelineVirtical"
+            app:layout_constraintTop_toBottomOf="@id/player_id"
+            tools:text="21" />
+
+        <TextView
+            android:id="@+id/player_height_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/heighttitileofplayer"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/player_age_title" />
+
+        <TextView
+            android:id="@+id/player_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/player_height_title"
+            app:layout_constraintEnd_toEndOf="@id/guidelineVirtical"
+            tools:text="180" />
+
+
+        <TextView
+            android:id="@+id/player_country_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/player_country_title"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/player_height_title" />
+
+        <TextView
+            android:id="@+id/player_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineVirtical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Germany" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
